@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "VitesseCms\\Facebook\\": "src/"
+      "VitesseCms\\Linkedin\\": "src/"
     }
   },
   "require": {
