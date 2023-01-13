@@ -38,13 +38,4 @@ class SocialShareListener
 
         return $text;
     }
-
-    /*public function beforeItemSave(Event $event, Item $item, Datafield $datafield): void
-    {
-        if ($item->getBool(FacebookEnum::SHARE_ITEM)) :
-            $this->facebookService->postLink('Hello world', 'http://nu.nl');
-
-            die();
-        endif;
-    }*/
 }
