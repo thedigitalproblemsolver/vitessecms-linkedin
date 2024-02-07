@@ -1,4 +1,5 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace VitesseCms\Linkedin\Listeners;
 
@@ -9,8 +10,8 @@ use VitesseCms\Linkedin\Listeners\Fields\SocialShareListener;
 
 class InitiateAdminListeners implements InitiateListenersInterface
 {
-    public static function setListeners(InjectableInterface $di): void
+    public static function setListeners(InjectableInterface $injectable): void
     {
-        $di->eventsManager->attach(SocialShare::class, new SocialShareListener());
+        $injectable->eventsManager->attach(SocialShare::class, new SocialShareListener());
     }
 }
